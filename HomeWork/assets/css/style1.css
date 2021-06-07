@@ -1,0 +1,72 @@
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 35px;
+  }
+  
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .list-group-item {
+    width: 1261px;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #eee;
+  }
+  
+  .container1:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container1 input:checked ~ .checkmark {
+    background-color: black;
+  }
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }  
+  .container1 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container1 .checkmark:after {
+    left: 10px;
+    top: 3px;
+    width: 8px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  .spann {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 20px 15px 20px;
+  }
+  
+  .spann:hover {
+    background-color: black;
+    color: white;
+  }
+  .restoreButton {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
